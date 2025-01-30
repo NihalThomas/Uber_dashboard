@@ -5,7 +5,7 @@ import plotly.express as px
 # Load dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\HP\PycharmProjects\uber_data\Data source\uber_data.csv", parse_dates=["tpep_pickup_datetime", "tpep_dropoff_datetime"])
+    df = pd.read_csv(r"uber_data.csv", parse_dates=["tpep_pickup_datetime", "tpep_dropoff_datetime"])
     return df
 
 df = load_data()
